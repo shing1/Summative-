@@ -1,1 +1,13 @@
+print ("choose a meaurment")
+output 6 measurment options (distance, mass, volume,etc)
+get user input 
+if input==mass 
+  output milligram, gram, kilogram 
+else if input == volume
+  output milligram, gram, kilogram  (cube)
+else if input==area
+  output milligram, gram, kilogram  (square)
+  
+  
+  
 
