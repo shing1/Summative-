@@ -1,0 +1,30 @@
+
+package gui;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+
+public class GUI {
+    public static void main(String[] args) {
+        
+        JFrame frame = new JFrame ("Welcome to UMeasure");
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300,300);
+        JPanel panel = new JPanel(); 
+        frame.add(panel);
+        JButton button = new JButton ("Menu");
+        panel.add(button);
+        
+ 
+    }
+   
+   
+
+       
+
+  
+        
+       
+    } 
