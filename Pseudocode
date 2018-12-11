@@ -1,12 +1,39 @@
-print ("choose a meaurment")
-output 6 measurment options (distance, mass, volume,etc)
-get user input 
-if input==mass 
-  output milligram, gram, kilogram 
-else if input == volume
-  output milligram, gram, kilogram  (cube)
-else if input==area
-  output milligram, gram, kilogram  (square)
+create Jframe with text "welcome to UMeasure"
+colour background light blue 
+create a MenuButton 
+Create a InstructionButton 
+
+while user click in not MenuButton or InstructionButton 
+
+  if user clicks Menubutton, go to Selectorframe 
+    disolove WelcomeFrame 
+    create Buttonframe with 6 button with types of meausrment on each
+    print ("choose a meaurment")
+    colour the each button 
+    add a sybmol/image associated with each mesurment 
+    
+      if user clicks DistanceButton
+         go to DistanceFrame 
+         dislove SelectorFrame
+         
+         try 
+         if user input "from" and "to" units and clicks Convert 
+          output results with 2 decimal places  
+          
+         catch invalid inputs ----> letters
+          output error and highlight red
+          allow to try again 
+          
+          else user clicks on Return to Main Menu
+            go to ButtonFrame 
+         
+  else click on InstructionButton
+    output a Jframe for instructions 
+  
+stay on Welcomeframe until user clicks one of the buttons 
+
+
+
   
   
   
