@@ -18,6 +18,7 @@ while user click in not MenuButton or InstructionButton
          
          try 
          if user input "from" and "to" units and clicks Convert 
+          do conversion calulation 
           output results with 2 decimal places  
           
          catch invalid inputs ----> letters
