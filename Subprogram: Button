@@ -19,12 +19,77 @@ public class GUI {
         
  
     }
-   
-   
-
-       
-
-  
         
        
     } 
+--------------------------------------------------------------------------------------------------------------
+
+
+import javax.swing.*; 
+import java.awt.*; 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+/*import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.InputMismatchException;
+import java.util.Scanner;*/
+
+
+
+public class MainClass{
+
+    private static int n;
+    
+    
+    
+    private JFrame f; 
+    private JPanel p; 
+    private JButton b1; 
+    private JLabel lab;
+    
+    int[] arr = {1, 2, 3, 4, 5}; 
+    
+    public void gui()
+    {
+        
+        f = new JFrame ("Sarah");
+        f.setVisible (true);
+        f.setSize(600,400);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        p= new JPanel ();
+        p.setBackground(Color.BLUE);
+        
+        b1= new JButton ("Hello World");
+        lab= new JLabel ("click on me!");
+        
+        p.add(b1);
+        p.add(lab);
+        
+        f.add(p);
+        
+        b1.addActionListener(new ActionListener(){
+            
+            public void actionPerformed(ActionEvent e){
+                JOptionPane.showMessageDialog(null, "goodbye" );
+            }
+        });
+        
+    }
+    
+
+    
+   public static void main(String [] args)
+   {
+  MainClass frame = new MainClass();
+  frame.gui();
+
+   }
+   
+}
+
+
+
+
+
