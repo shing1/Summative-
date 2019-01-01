@@ -1,0 +1,13 @@
+This is where we will post the problems that we encountered and solutiions of how we overcome it 
+
+
+1) inital plan was to create muliple JFrames; each Jframe would have assigned different unit conversion.
+Ex: mass Jframe, distance jFrame, etc. From my experience, it gets very hard to those
+Jframes. For example, i was able to go to next jframes using a button. when running, it always open to a specfic Jframe first; not the 
+Jframe desired to be open first. i tried to check the packages and locations of the file although no luck. From extenral researching, i 
+found creating a project with mulplie jframe is a bad practice.
+https://stackoverflow.com/questions/9554636/the-use-of-multiple-jframes-good-or-bad-practice 
+
+I instead use tabbed panels as an alternative way to combat this problem and found this featrue to be easier to use. furthermore, 
+we need to revision our prototype. 
+
