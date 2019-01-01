@@ -1,0 +1,266 @@
+public class JFrame1 extends javax.swing.JFrame {
+
+    /**
+     * Creates new form JFrame1
+     */
+    public JFrame1() {
+        initComponents();
+    }
+
+   
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jColorChooser1 = new javax.swing.JColorChooser();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        ComboBox1 = new javax.swing.JComboBox<>();
+        TextField1 = new javax.swing.JTextField();
+        TextField2 = new javax.swing.JTextField();
+        ConvertButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        MenuButton = new javax.swing.JButton();
+
+        jLabel1.setText("jLabel1");
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        ComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "mg to g", "mg to kg", "g to mg", "g to kg", "kg to mg", "kg to g" }));
+        ComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboBox1ActionPerformed(evt);
+            }
+        });
+
+        TextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextField1ActionPerformed(evt);
+            }
+        });
+
+        TextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextField2ActionPerformed(evt);
+            }
+        });
+
+        ConvertButton.setText("Convert");
+        ConvertButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConvertButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Click on Starting and Ending Units ");
+
+        jLabel3.setText("Enter Value:");
+
+        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel5.setText("     Converting Mass");
+
+        MenuButton.setText("Main Menu");
+        MenuButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MenuButton)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(TextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ConvertButton)
+                        .addGap(46, 46, 46)
+                        .addComponent(TextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(68, 68, 68))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ConvertButton)
+                    .addComponent(TextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addComponent(MenuButton)
+                .addGap(22, 22, 22))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void ComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
+
+    private void TextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    }                                          
+
+    private void TextField2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    }                                          
+
+    private void ConvertButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
+       
+           /*mg to g, mg to kg, g to mg, g to kg, kg to mg, kg to g*/
+        double m= 1000;
+        double n = 1000000;
+        double mass1 = Double.parseDouble(TextField1.getText());
+
+        if (ComboBox1.getSelectedItem().equals("mg to g")){
+            //mg divide by 1000
+            double mg2g = mass1/m;
+            String value = String.format("%.2f", mg2g);
+            TextField2.setText(value);     
+        }
+            
+        else if (ComboBox1.getSelectedItem().equals("mg to kg")){
+            double mg2kg = mass1/n;
+            String value = String.format("%.6f", mg2kg);
+            TextField2.setText(value); 
+        }
+        
+        else if (ComboBox1.getSelectedItem().equals("g to mg")){
+            double g2mg = mass1/m;
+            String value = String.format("%.2f", g2mg);
+            TextField2.setText(value); 
+        }
+        
+         else if (ComboBox1.getSelectedItem().equals("g to kg")){
+            double g2kg = mass1*m;
+            String value = String.format("%.6f", g2kg);
+            TextField2.setText(value); 
+        }
+          
+        else if (ComboBox1.getSelectedItem().equals("kg to mg")){
+            double kg2mg = mass1*n;
+            String value = String.format("%.6f", kg2mg);
+            TextField2.setText(value); 
+        }
+        
+        else if (ComboBox1.getSelectedItem().equals("kg to g")){
+            double kg2g = mass1*m;
+            String value = String.format("%.6f", kg2g);
+            TextField2.setText(value); 
+        }
+        
+       
+    
+        
+        
+            
+    
+      
+
+        
+         
+    }                                             
+
+    private void MenuButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+      
+         
+      
+        
+        
+        
+        
+        
+        
+        
+    }                                          
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            
+            
+            public void run() {
+                new JFrame1().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JComboBox<String> ComboBox1;
+    private javax.swing.JButton ConvertButton;
+    private javax.swing.JButton MenuButton;
+    private javax.swing.JTextField TextField1;
+    private javax.swing.JTextField TextField2;
+    private javax.swing.JColorChooser jColorChooser1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    // End of variables declaration                   
+}
