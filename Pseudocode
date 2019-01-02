@@ -1,4 +1,8 @@
-create Jframe with text "welcome to UMeasure"
+
+**Measurement Converter (Physics Oriented)**
+
+create JFrame 
+with text "welcome to UMeasure"
 colour background light blue 
 create a MenuButton 
 Create a InstructionButton 
