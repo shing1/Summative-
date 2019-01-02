@@ -1,0 +1,103 @@
+
+**Measurement Converter (Physics Oriented)**
+
+create JFrame 
+add tabbed panels and drag 6 panels 
+label each panels of different catgories (welcome, SI unit table, mass, distance, temp, time) 
+
+ // Suggested Variables declaration                  
+    private  ComboBox1;
+    private  ConvertButton;
+    private  TabbedPaneV;
+    private  TextFieldResult;
+    private  TextFieldValue;
+    private  jLabel1;
+    private jLabel2;
+    private  jLabel3;
+    private jLabel4;
+    private  jPanel1;
+    private  jPanel2;
+    private jPanel3;
+    private  jScrollPane1;
+    private  jTable1;
+
+
+
+WELCOME panel:
+-"Welcome to UMeasure" 
+- add logo icon 
+- 
+
+SI UNIT TABLE panel: 
+- add tabel 
+- label values and names of columns and rows 
+- add label "SI UNITS" 
+
+MASS panel: 
+1. Design Aspect: 
+- add label " Converting Mass"
+- add combo-box 
+ - change elements to "mg to g to g, mg to kg, g to mg, g to kg, kg to mg, kg to g" 
+- add label " Enter value"
+- add textfield
+- add textfield
+- add button "convert"
+
+2. Coding  (similar code format for other conversion panels)
+- int m = 1000; 
+- int n = 1000000; 
+- int mass1 = getText from textfieldValue 
+when ConvertButton is clicked: 
+if (item of ComboBox1 selected == "mg to g")
+  { mg divide by 1000 
+  int mg2g = mg/m                                   
+  format 2 decimnal places **decimals places may vary
+  show mg2g on textfieldResult }
+  
+  else if (item of Combbox1 selected == "mg to kg" )
+  { mg times by 1000000
+  int mg2kg = mg*n; 
+  format 2 decimnal places 
+  show mg2kg on textfieldResult
+  }
+  
+  else if (item of Combbox1 selected == "g to mg" )
+  { g divide by 1000
+  int g2mg = g/m; 
+  format 2 decimnal places 
+  show  g2mg on textfieldResult
+  }
+
+
+  else if (item of Combbox1 selected == "g to kg" )
+  { g times by 1000
+  int g2kg = mg*m; 
+  format 2 decimnal places 
+  show g2kg on textfieldResult
+  }
+
+ 
+  else if (item of Combbox1 selected == "kg to mg" )
+  { kg divide by 1000000
+  int kg2mg = kg*n; 
+  format 2 decimnal places 
+  show kg2mg on textfieldResult
+  }
+  
+   
+  else (item of Combbox1 selected == "kg to g" )
+  { kg divide by 1000
+  int kg2g = kg*m; 
+  format 2 decimnal places 
+  show kg2g on textfieldResult
+  }
+
+  
+
+        
+
+
+  
+  
+  
+
