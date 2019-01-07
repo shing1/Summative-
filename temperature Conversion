@@ -1,0 +1,18 @@
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        //convert to c - (°F − 32) × 5/9 = °C
+        //convert to f - (°C × 9/5) + 32 = °F
+        double tempvalue = Double.parseDouble(TEMPTextField1.getText());
+
+        if (TempComboBox1.getSelectedItem().equals("C° to F°")){
+            double C2F= (tempvalue-32)*5/9;
+            String value = String.format("%.2f",C2F );
+            TEMPRESULTTextField.setText(value);     
+        }
+            
+        else if (ComboBox1.getSelectedItem().equals("mg to kg")){
+            double mg2kg = mass1/n;
+            String value = String.format("%.6f", mg2kg);
+            TextFieldResult.setText(value); 
+        }
+
+    }                   
