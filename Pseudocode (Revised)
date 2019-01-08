@@ -24,9 +24,14 @@ label each panels of different catgories (welcome, SI unit table, mass, distance
 
 
 WELCOME panel:
--"Welcome to UMeasure" 
+-label ("Welcome to UMeasure" )
 - add logo icon 
-- 
+- add other images  
+- add "About" button 
+when "About" button is clicked 
+  - output a external panel containing how to use it, authors, what is it, etc 
+  - exit panel when user click red x of conrner 
+
 
 SI UNIT TABLE panel: 
 - add tabel 
