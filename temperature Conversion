@@ -9,10 +9,10 @@
             TEMPRESULTTextField.setText(value);     
         }
             
-        else if (ComboBox1.getSelectedItem().equals("mg to kg")){
-            double mg2kg = mass1/n;
-            String value = String.format("%.6f", mg2kg);
-            TextFieldResult.setText(value); 
+        else if (TempComboBox1.getSelectedItem().equals("F° to C°")){
+            double F2C = (tempvalue*5/9)+32;
+            String value = String.format("%.2f", F2C);
+            TEMPRESULTTextField.setText(value); 
         }
 
     }                   
