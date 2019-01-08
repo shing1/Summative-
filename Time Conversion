@@ -1,0 +1,44 @@
+        //double units refer to the method of conversion used for each possible outcome m-h, h-m, s-m etc
+        
+        double m= 1000;
+        double n = 1000000;
+
+        double mass1 = Double.parseDouble(TextField1.getText()); //mass is example use correlating unit
+
+
+//combo box name must correlate to unit within code- to do in class bc netbeans
+        if (ComboBox1.getSelectedItem().equals("mg to g")){
+
+        
+
+            double mg2g = mass1/m;
+
+            String value = String.format("%.2f", mg2g);
+
+            TextField2.setText(value);     
+
+        }
+
+            
+
+        else if (ComboBox1.getSelectedItem().equals("mg to kg")){
+
+            double mg2kg = mass1/n;
+
+            String value = String.format("%.6f", mg2kg);
+
+            TextField2.setText(value); 
+
+        }
+
+        
+
+        else if (ComboBox1.getSelectedItem().equals("g to mg")){
+
+            double g2mg = mass1/m;
+
+            String value = String.format("%.2f", g2mg);
+
+            TextField2.setText(value); 
+
+        }
