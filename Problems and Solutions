@@ -11,3 +11,8 @@ https://stackoverflow.com/questions/9554636/the-use-of-multiple-jframes-good-or-
 I instead use tabbed panels as an alternative way to combat this problem and found this featrue to be easier to use. furthermore, 
 we need to revision our prototype. 
 
+At first, keeping track of all the designs was difficult, and I found it confusing between when you could and when you couldn't reuse designs.
+When each unit of measurement became a file of its own, it was much easier to distinguish between them, and to compare models to ensure visual
+similarity.
+
+
