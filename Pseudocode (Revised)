@@ -97,12 +97,38 @@ if (item of ComboBox1 selected == "mg to g")
   show kg2g on textfieldResult
   }
 
-  
+time panel: 
+
+if (item of ComboBox selected == "seconds to minutes")
+  { time *60                             
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
 
         
-
-
+else if (item of ComboBox selected == "seconds to hours")
+  { time *3600                             
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
   
   
+  else if (item of ComboBox selected == "minutes to seconds")
+    { time/60                             
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
+
+  else if (item of ComboBox selected == "minutes to hours")
+    { time/60                            
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
+
+    else if (item of ComboBox selected == "hours to minutes")
+    { time*60                            
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
+ 
+  else if (item of ComboBox selected == "hours to seconds")
+    { time*3600                            
+  format 2 decimnal places **decimals places may vary
+  show time on textfieldResult }
   
 
