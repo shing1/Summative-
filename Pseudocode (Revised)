@@ -132,3 +132,61 @@ else if (item of ComboBox selected == "seconds to hours")
   show time on textfieldResult }
   
 
+
+
+create JFrame 
+-add tabbed panels and drag 6 panels 
+-label each panel for different catgories (welcome, SI unit table, mass, distance, temp, time) 
+
+ // Suggested Variables declaration                  
+    private  ComboBox1;
+    private  ConvertButton;
+    private  TabbedPaneV;
+    private  TextFieldResult;
+    private  TextFieldValue;
+    private  jLabel1;
+    private jLabel2;
+    private  jLabel3;
+    private jLabel4;
+    private  jPanel1;
+    private  jPanel2;
+    private jPanel3;
+    private  jScrollPane1;
+    private  jTable1;
+
+
+
+WELCOME panel:
+-label ("Welcome to UMeasure" )
+- add logo icon 
+- add other images  
+- add "About" button 
+when "About" button is clicked:
+  - output a external panel containing how to use it, authors, what is it, etc 
+  - exit panel when user click red x of conrner 
+
+
+SI UNIT TABLE panel: 
+- add tabel 
+- label values and names of columns and rows 
+- add label "SI UNITS" 
+
+Unit panels:
+when clicked-
+ open page with combo box, text fields and convert button
+ 
+** Units:
+Temp- c° and f°
+Time- s, m, h
+Dist- cm, m, km
+Mass- mg, g, kg
+               **
+
+-user clicks drop down menu and chooses method of conversion
+-user enters number value to first text field
+ -if letter or character value entered, program will not run
+ -repeat until valid number value is entered
+-program runs calculation based on chosen conversion method (combo box choice)
+-program returns converted value in second text field
+-rinse and repeat
+
