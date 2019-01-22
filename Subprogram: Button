@@ -171,5 +171,53 @@ public class Jframe {
  
     }
 
+----------------------------------------------------------------------------------------------------------------------------------
 
+Temp + Dist
+
+
+
+//temperature
+JTextField temp_value= new JTextField ();
+    P_Temp.setBackground(Color.PINK); 
+    JButton temp_Convert= new JButton ("CONVERT");
+    P_temp.add(t_Convert);
+    temp_Convert.setSize(10,20);
+
+
+   TextField temp_temp1, temp_temp2
+     temp_temp1=new TextField("Enter a value");  
+    temp_temp1.setBounds(50,100, 90,30);  
+    temp_temp2=new TextField("result");  
+    temp_temp2.setBounds(50,150, 90,30);  
+    P_Temp.add(temp_temp1); 
+    P_Temp.add(temp_temp2); 
+    String [] temp_list = {“Fahrenheit to Celsius”, “Celsius to Fahrenheit” };
+    JComboBox temp_choice = new JComboBox(temp_ list); 
+    P_Temp.add(temp_choice);
+    temp_ choice.setBounds(300, 100,90, 20);
+
+
+
+
+
+//distance (length)
+JTextField dist_value= new JTextField ();
+    P_Dist.setBackground(Color.YELLOW); 
+    JButton dist_Convert= new JButton ("CONVERT");
+    P_Dist.add(dist_Convert);
+    dist_Convert.setSize(10,20);
+    
+    
+    TextField dist_dist1,dist_dist2;  
+    dist_dist1=new TextField("Enter a value");  
+    dist_dist1.setBounds(50,100, 90,30);  
+    dist_dist2=new TextField("result");  
+    dist_dist2.setBounds(50,150, 90,30);  
+    P_Dist.add(dist_dist1); 
+    P_Dist.add(dist_dist2); 
+    String [] dist_list = {"Centimeters to Meters”, “Centimeters to Kilometers”, “Meters to Centimeters”, “Meters to Kilometers”, “Kilometers to Centimeters”, “Kilometers to Meters”};
+    JComboBox dist_choice = new JComboBox(Dist_list); 
+    P_Dist.add(dist_choice);
+    dist_choice.setBounds(300, 100,90, 20);
 
