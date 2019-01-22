@@ -190,3 +190,9 @@ Mass- mg, g, kg
 -program returns converted value in second text field
 -rinse and repeat
 
+
+FINAL:
+Main jframe
+
+subclass extends jframe
+
