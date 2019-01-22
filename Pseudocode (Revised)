@@ -21,160 +21,11 @@ label each panels of different catgories (welcome, SI unit table, mass, distance
     private  jScrollPane1;
     private  jTable1;
 
-
-
-WELCOME panel:
--label ("Welcome to UMeasure" )
-- add logo icon 
-- add other images  
-- add "About" button 
-when "About" button is clicked 
-  - output a external panel containing how to use it, authors, what is it, etc 
-  - exit panel when user click red x of conrner 
-
-
 SI UNIT TABLE panel: 
 - add tabel 
 - label values and names of columns and rows 
 - add label "SI UNITS" 
 
-MASS panel: 
-1. Design Aspect: 
-- add label " Converting Mass"
-- add combo-box 
- - change elements to "mg to g to g, mg to kg, g to mg, g to kg, kg to mg, kg to g" 
-- add label " Enter value"
-- add textfield
-- add textfield
-- add button "convert"
-
-2. Coding  (similar code format for other conversion panels)
-- int m = 1000; 
-- int n = 1000000; 
-- int mass1 = getText from textfieldValue 
-when ConvertButton is clicked: 
-if (item of ComboBox1 selected == "mg to g")
-  { mg divide by 1000 
-  int mg2g = mg/m                                   
-  format 2 decimnal places **decimals places may vary
-  show mg2g on textfieldResult }
-  
-  else if (item of Combbox1 selected == "mg to kg" )
-  { mg times by 1000000
-  int mg2kg = mg*n; 
-  format 2 decimnal places 
-  show mg2kg on textfieldResult
-  }
-  
-  else if (item of Combbox1 selected == "g to mg" )
-  { g divide by 1000
-  int g2mg = g/m; 
-  format 2 decimnal places 
-  show  g2mg on textfieldResult
-  }
-
-
-  else if (item of Combbox1 selected == "g to kg" )
-  { g times by 1000
-  int g2kg = mg*m; 
-  format 2 decimnal places 
-  show g2kg on textfieldResult
-  }
-
- 
-  else if (item of Combbox1 selected == "kg to mg" )
-  { kg divide by 1000000
-  int kg2mg = kg*n; 
-  format 2 decimnal places 
-  show kg2mg on textfieldResult
-  }
-  
-   
-  else (item of Combbox1 selected == "kg to g" )
-  { kg divide by 1000
-  int kg2g = kg*m; 
-  format 2 decimnal places 
-  show kg2g on textfieldResult
-  }
-
-time panel: 
-
-if (item of ComboBox selected == "seconds to minutes")
-  { time *60                             
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
-
-        
-else if (item of ComboBox selected == "seconds to hours")
-  { time *3600                             
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
-  
-  
-  else if (item of ComboBox selected == "minutes to seconds")
-    { time/60                             
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
-
-  else if (item of ComboBox selected == "minutes to hours")
-    { time/60                            
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
-
-    else if (item of ComboBox selected == "hours to minutes")
-    { time*60                            
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
- 
-  else if (item of ComboBox selected == "hours to seconds")
-    { time*3600                            
-  format 2 decimnal places **decimals places may vary
-  show time on textfieldResult }
-  
-
-
-
-create JFrame 
--add tabbed panels and drag 6 panels 
--label each panel for different catgories (welcome, SI unit table, mass, distance, temp, time) 
-
- // Suggested Variables declaration                  
-    private  ComboBox1;
-    private  ConvertButton;
-    private  TabbedPaneV;
-    private  TextFieldResult;
-    private  TextFieldValue;
-    private  jLabel1;
-    private jLabel2;
-    private  jLabel3;
-    private jLabel4;
-    private  jPanel1;
-    private  jPanel2;
-    private jPanel3;
-    private  jScrollPane1;
-    private  jTable1;
-
-
-
-WELCOME panel:
--label ("Welcome to UMeasure" )
-- add logo icon 
-- add other images  
-- add "About" button 
-when "About" button is clicked:
-  - output a external panel containing how to use it, authors, what is it, etc 
-  - exit panel when user click red x of conrner 
-
-
-SI UNIT TABLE panel: 
-- add tabel 
-- label values and names of columns and rows 
-- add label "SI UNITS" 
-
-Unit panels:
-when clicked-
- open page with combo box, text fields and convert button
- 
 ** Units:
 Temp- c° and f°
 Time- s, m, h
@@ -191,8 +42,73 @@ Mass- mg, g, kg
 -rinse and repeat
 
 
+
 FINAL:
+//see below for classes and their encompassed variables
+
+When (any) tab is clicked:
+ -open unit frame
+   -colour is set
+   -combo box is set to default measure (usually smallest unit to middle unit conversion)
+   -text fields are cleared
+ -user chooses conversion method from drop down box
+ -user enters number value into first text field (does not compute if letter or special character is entered, second field does not
+  accept text)
+ -program runs entered value in corresponding calculator
+ -result is printed in second text field
+
+
+CLASSES
+
 Main jframe
 
-subclass extends jframe
+     double X = (varied based on unit);
+     double Y =(varied based on unit);
+     JTabbedPane tabs= new JTabbedPane ();
+     JLabel L = new JLabel(UNIT);
+     JPanel P_(unit name) =  new JPanel();
+   
+     JPanel P_Time =  new JPanel();
+     JPanel P_Distance =  new JPanel();
+     JPanel P_Temperature =  new JPanel();
+     JPanel P_Table =  new JPanel();
+     JFrame f = new JFrame("Umeasure");
+  
 
+subclass extends jframe
+//All buttons and components for each frame are organized here
+
+MASS VARIABLES- 
+ P_Mass (background)
+ mass_Convert (convert button for mass)
+ mass_mass1 (text field 1)
+ mass_mass2 (text field 2)
+ mass_list (list of measurements used)
+ mass_choice (combo box)
+ 
+TIME VARIABLES-
+ P_Time
+ time_Convert
+ time_time1
+ time_time2
+ time_list
+ time_choice
+ 
+ TEMPERATURE VARIABLES-
+ P_Temp
+ time_Convert
+ temp_temp1
+ temp_temp2
+ temp_list
+ time_choice
+ 
+ DISTANCE VARIABLES-
+ P_Dist
+ dist_Convert
+ dist_dist1
+ dist_dist2
+ dist_list
+ dist_choice
+
+ 
+ 
