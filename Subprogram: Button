@@ -89,7 +89,87 @@ public class MainClass{
    
 }
 
+------------------------------------------------------------------------------------------------------------------------
 
+package code;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+
+class calc extends Jframe {
+
+      public void actionPerformed(ActionEvent e){
+ 
+            }
+    
+}
+
+
+public class Jframe {
+
+    public void gui(){
+     JFrame f = new JFrame("Umeausre");
+     f.setSize(500,300);
+ 
+     f.setVisible(true); 
+     JPanel MyPanel =  new JPanel();   
+     JLabel L = new JLabel("MASS");
+     JPanel P =  new JPanel();                   
+     P.add(L);
+    f.getContentPane().add(P);
+   // P.setBackground(Color.YELLOW); 
+   
+    JButton Convert= new JButton ("CONVERT");
+    P.add(Convert);
+    Convert.setSize(10,20);
+   
+    JTextField m_value= new JTextField ();
+    TextField t1,t2;  
+    t1=new TextField("Enter a value");  
+    t1.setBounds(50,100, 90,30);  
+    t2=new TextField("result");  
+    t2.setBounds(50,150, 90,30);  
+    P.add(t1); P.add(t2); 
+    String [] list = {"mg to g", "mg to kg", "g to mg", "g to kg","kg to mg","kg to g"  };
+    
+  
+    JComboBox m_choice = new JComboBox(list); 
+    P.add(m_choice);
+    m_choice.setBounds(300, 100,90, 20);
+    
+    double m= 1000;
+    double n = 1000000;
+    double mass1 = Double.parseDouble(t1.getText());
+    
+    
+    Convert.addActionListener(new ActionListener(){
+            
+            public void actionPerformed(ActionEvent e){
+                
+                
+                
+                
+                
+                
+            }
+        });
+        
+    }
+
+    public static void main(String[] args) {
+        
+        Jframe frame = new Jframe();
+        frame.gui(); 
+        
+        
+        
+    }
+ 
+    }
 
 
 
