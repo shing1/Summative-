@@ -25,3 +25,10 @@ didn't like and asked them to make a list of what changes needed to be made. For
 the colours used to differenciate the units and the tab panel that allowed them to easily access any unit they wished without having
 to fuss over buttons or navigating a page. This program was very simple and used if statements to organize all the data. We planned to
 make a better more complex version as the final piece.
+
+When creating the more complete version, we had trouble implementing the action listener to the convert button. Whenever the code went to run,
+the convert button would either not work at all, or show an error message. Because the formatting was different then the one we had used for
+the first mdel, we had more difficulty figuring out how it worked despite considerable research. (different versions and everything down
+to the content of the code would affect the buttons and without specifics it sometimes made it difficult to interpret the information
+into our own code.) We overcame many of the issues that presenrted themselves but the biggest one remains unsolved at this point, that
+being the data linked to the convert button.
